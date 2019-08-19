@@ -68,7 +68,7 @@ const Appbar = (props) => {
   </AppContext.Consumer>
 <ButtonElement name="Settings"  />
 
- <a  href="/" style={{cursor:'pointer' , color:'white' , textDecoration: 'none'}} onClick={() => firebase.auth().signOut()}>Sign-out</a>
+ <a  href="#" style={{cursor:'pointer' , color:'white' , textDecoration: 'none'}} onClick={() => firebase.auth().signOut()}>Sign-out</a>
       </Bar>
 
 
