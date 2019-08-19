@@ -48,14 +48,15 @@ export default function() {
 <AppContext.Consumer>
 
 
-{({Prices}) =>  <Price>
+{({Prices, Favorites}) =>  <Price>
 
 
 
 {getkeys(Prices).map( (res , index) => {
 
 
-    return ( <PriceTile key={index}  Prices ={Prices}   Pricekeys= {res}/>
+
+    return ( <PriceTile key={index}  Favorites= {Favorites} Prices ={Prices}   Pricekeys= {res}/>
  )
 
 

@@ -58,7 +58,7 @@ Dash = async () => {
 
 // addng AddCoins to toplevel
 
-AddCoins  =  async (key) => {
+AddCoins  =  (key) => {
 
 let Favorites  = [...this.state.Favorites]
 
@@ -66,7 +66,7 @@ if(Favorites.length < MaxFavorites) {
 
      Favorites.push(key);
 
- await  this.setState({
+      this.setState({
   Favorites
      })
 }
@@ -165,7 +165,7 @@ page: 'DashBoard',
 firstVisit :false,
 currentFavorites : currentFavorites
 
-}, async () => {
+},  () => {
 
    return  this.FetchPrices();
 

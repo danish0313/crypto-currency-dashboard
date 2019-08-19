@@ -49,31 +49,29 @@ ${props => props.currentFavorites  && css`
 `
 
 
+const PriceTile = (props) => {
 
-
-
-const PriceTile =  (props) => {
-
-let AllPrices =  props.Prices[props.Pricekeys];
+let AllPrices = props.Prices[props.Pricekeys];
 
 let Prices = [];
 
 for(let key in AllPrices){
 
 Prices.push({
-id : AllPrices[key],
-symbols : AllPrices[key].USD.FROMSYMBOL
+id : AllPrices[key]
+
 });
 
-
 }
+
+
 
 
   return (
 
   <AppContext.Consumer>
 
-  {({currentFavorites, Favorites , ChangingCoins}) =>   <SelectableTiles currentFavorites = {currentFavorites === Prices[currentFavorites]}>
+  {({currentFavorites, Favorites , ChangingCoins}) =>   <SelectableTiles >
 
 
 
