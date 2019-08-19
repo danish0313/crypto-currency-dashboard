@@ -58,7 +58,7 @@ Dash = async () => {
 
 // addng AddCoins to toplevel
 
-AddCoins = (key) => {
+AddCoins  =  async (key) => {
 
 let Favorites  = [...this.state.Favorites]
 
@@ -66,7 +66,7 @@ if(Favorites.length < MaxFavorites) {
 
      Favorites.push(key);
 
-     this.setState({
+ await  this.setState({
   Favorites
      })
 }
@@ -110,14 +110,15 @@ this.setState({Prices});
 
 
 
-Prices =  async() => {
+Prices =  async () => {
 let data = [];
 for (var i = 0; i < this.state.Favorites.length; i++) {
 
   try{
    let getprices = await cc.priceFull(this.state.Favorites[i] ,'USD');
 
-     data.push(getprices);
+   data.push(getprices);
+
 }catch(e){
 
 
@@ -155,18 +156,18 @@ currentFavorites : name
 
 // for Favorites bttn acton
 
-ConfirmFavorites  = () => {
+ConfirmFavorites  = async () => {
 
   let currentFavorites= this.state.Favorites[0] ;
-this.setState({
+ this.setState({
 
 page: 'DashBoard',
 firstVisit :false,
 currentFavorites : currentFavorites
 
-}, () => {
+}, async () => {
 
- return this.FetchPrices();
+   return  this.FetchPrices();
 
 })
 

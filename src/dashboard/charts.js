@@ -7,6 +7,7 @@ moment.locale('ja')
 class Chart extends Component {
   constructor(props){
     super(props)
+
     this.state = {
       width: props.width,
       height: props.height,

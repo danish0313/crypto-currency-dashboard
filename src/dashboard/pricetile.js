@@ -52,17 +52,17 @@ ${props => props.currentFavorites  && css`
 
 
 
-const PriceTile = (props) => {
+const PriceTile =  (props) => {
 
-let AllPrices = props.Prices[props.Pricekeys];
+let AllPrices =  props.Prices[props.Pricekeys];
 
 let Prices = [];
 
 for(let key in AllPrices){
 
 Prices.push({
-id : AllPrices[key]
-
+id : AllPrices[key],
+symbols : AllPrices[key].USD.FROMSYMBOL
 });
 
 
@@ -73,15 +73,15 @@ id : AllPrices[key]
 
   <AppContext.Consumer>
 
-  {({currentFavorites, Favorites , ChangingCoins}) =>   <SelectableTiles currentFavorites = {currentFavorites === Prices[0].id.USD.FROMSYMBOL}>
+  {({currentFavorites, Favorites , ChangingCoins}) =>   <SelectableTiles currentFavorites = {currentFavorites === Prices[currentFavorites]}>
 
 
 
 
 {Prices.map( prices => (
-  <React.Fragment >
 
-      <Inner onClick = {() => ChangingCoins(prices.id.USD.FROMSYMBOL)}>
+
+      <Inner key={prices.id.USD.FROMSYMBOL} onClick = {() => ChangingCoins(prices.id.USD.FROMSYMBOL)}>
 <Left>
       <p>{prices.id.USD.FROMSYMBOL} </p>
   </Left>
@@ -97,7 +97,7 @@ id : AllPrices[key]
 </Right>
 
 </Inner>
-  </React.Fragment>
+
 ))}
 
 
