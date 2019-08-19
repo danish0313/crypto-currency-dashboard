@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/danish0313/crypto-currency-dashboard/static/css/main.b37096c9.chunk.css",
-    "main.js": "/danish0313/crypto-currency-dashboard/static/js/main.226b4fb2.chunk.js",
-    "main.js.map": "/danish0313/crypto-currency-dashboard/static/js/main.226b4fb2.chunk.js.map",
-    "runtime~main.js": "/danish0313/crypto-currency-dashboard/static/js/runtime~main.c8061672.js",
-    "runtime~main.js.map": "/danish0313/crypto-currency-dashboard/static/js/runtime~main.c8061672.js.map",
-    "static/js/2.666bdcd2.chunk.js": "/danish0313/crypto-currency-dashboard/static/js/2.666bdcd2.chunk.js",
-    "static/js/2.666bdcd2.chunk.js.map": "/danish0313/crypto-currency-dashboard/static/js/2.666bdcd2.chunk.js.map",
-    "index.html": "/danish0313/crypto-currency-dashboard/index.html",
-    "precache-manifest.2801ab307c6c102f8a44beff1e1bfc7d.js": "/danish0313/crypto-currency-dashboard/precache-manifest.2801ab307c6c102f8a44beff1e1bfc7d.js",
-    "service-worker.js": "/danish0313/crypto-currency-dashboard/service-worker.js",
-    "static/css/main.b37096c9.chunk.css.map": "/danish0313/crypto-currency-dashboard/static/css/main.b37096c9.chunk.css.map",
-    "static/media/App.css": "/danish0313/crypto-currency-dashboard/static/media/back3.dd844d0f.gif"
+    "main.css": "/crypto-currency-dashboard/static/css/main.7e581335.chunk.css",
+    "main.js": "/crypto-currency-dashboard/static/js/main.a9e7eaa8.chunk.js",
+    "main.js.map": "/crypto-currency-dashboard/static/js/main.a9e7eaa8.chunk.js.map",
+    "runtime~main.js": "/crypto-currency-dashboard/static/js/runtime~main.370ebf3f.js",
+    "runtime~main.js.map": "/crypto-currency-dashboard/static/js/runtime~main.370ebf3f.js.map",
+    "static/js/2.9ac3f2db.chunk.js": "/crypto-currency-dashboard/static/js/2.9ac3f2db.chunk.js",
+    "static/js/2.9ac3f2db.chunk.js.map": "/crypto-currency-dashboard/static/js/2.9ac3f2db.chunk.js.map",
+    "index.html": "/crypto-currency-dashboard/index.html",
+    "precache-manifest.d2e10744c6ae40d47c1ee308ddf8e018.js": "/crypto-currency-dashboard/precache-manifest.d2e10744c6ae40d47c1ee308ddf8e018.js",
+    "service-worker.js": "/crypto-currency-dashboard/service-worker.js",
+    "static/css/main.7e581335.chunk.css.map": "/crypto-currency-dashboard/static/css/main.7e581335.chunk.css.map",
+    "static/media/App.css": "/crypto-currency-dashboard/static/media/back3.dd844d0f.gif"
   }
 }
