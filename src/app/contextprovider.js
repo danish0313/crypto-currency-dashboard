@@ -29,7 +29,9 @@ ConfirmFavorites : this.ConfirmFavorites,
 FilterCoins: this.FilterCoins,
 firstVisit : true,
 ChangingCoins: this.ChangingCoins,
+changingGraph :this.changingGraph ,
 Favorites : ['BTC','ETH','XMR','DOGE'],
+graphValue : 'month'
 
 }
 
@@ -172,7 +174,6 @@ currentFavorites : currentFavorites
 })
 
 
-
 // settng localStorage
 
 localStorage.setItem('cryptoDash', JSON.stringify({
@@ -241,6 +242,22 @@ this.setState({
 SearchedCoins : searching
 
 });
+
+}
+
+
+
+// changingGraph value
+changingGraph = (value) => {
+
+
+  this.setState({
+
+
+  graphValue : value
+
+  });
+
 
 }
 

@@ -20,7 +20,7 @@ cursor:pointer;
 
 const SpotlightGrid = styled.div`
 display: grid ;
-grid-template-columns:repeat(auto-fill,minmax(390px , 1fr) );
+grid-template-columns:repeat(auto-fill,minmax(500px , 1fr) );
 margin-top: 100px;
 grid-gap: 30px;
 `
